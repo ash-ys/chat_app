@@ -1,11 +1,11 @@
 import {useState } from 'react';
-const MessageForm = () =>{
+const MessageForm = () => {
         const [value, setValue] = useState('');
 
-    const handleSubmit= ()=>{
+    const handleSubmit = () => {
 
     }
-    const handleSubmit= ()=>{
+    const handleSubmit = () => {
 
     }
 return(
