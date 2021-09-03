@@ -9,10 +9,10 @@ const ChatFeed =(props )=>{
 
     const renderMessages = ()=>{
         const keys = Object.keys(messages);
-        console.log(keys);
-        return keys.map(key,index) => {
+        
+        return keys.map((key,index) => {
             const message = messages[key];
-            const LastMessageKey = index===0 ? null: keys[index -1];
+            const lastMessageKey = index === 0 ? null: keys[index -1];
             const isMyMessage = userName === message.sender.username;
             
             return(
@@ -24,7 +24,7 @@ const ChatFeed =(props )=>{
                             : <TheirMessage />
                         }
                     </div>
-                    <div className="read-receipts" style={{marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMessage ? '0px' : '68px' }}>
+                    <div className="read-receipts" style={{marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px' : '68px' }}>
                     read-receipts
 
                     </div>
