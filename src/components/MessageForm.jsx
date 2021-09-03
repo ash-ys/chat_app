@@ -5,7 +5,7 @@ const MessageForm = () => {
     const handleSubmit = () => {
 
     }
-    const handleSubmit = () => {
+    const handleChange = () => {
 
     }
 return(
